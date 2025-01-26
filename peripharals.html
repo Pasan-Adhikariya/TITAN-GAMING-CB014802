@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/peripharals.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header class="gaming-header">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img">
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+        </div>
+    
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <!-- Navigation Menu -->
+        <nav class="navbar" id="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html#our-mission">Our Mission</a></li>
+                        <li><a href="about.html#our-services">Our Services</a></li>
+                        <li><a href="about.html#our-stores">Our Stores</a></li>
+                        <li><a href="about.html#our-team">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="games.html">Games</a>
+                </li>
+                <li class="dropdown">
+                    <a>Accessories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="consoles.html">Consoles</a></li>
+                        <li><a href="peripharals.html">Peripharals</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="upcoming.html">Upcoming</a>
+                </li>
+                <li><a href="faq.html">FAQ & Forums</a></li>
+            </ul>
+        </nav>
+
+   
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-btn">Search</button>
+        </div>
+    </header>
+    
+    <!-- JavaScript to handle mobile navigation toggle -->
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active'); // Toggle the visibility of the navbar
+            this.classList.toggle('active'); // Animate the hamburger icon to "X"
+        });
+    </script>
+
+
+
+
+<section class="main-title">
+    <div class="title-container">
+        <h1>Revolutionize Your Gaming Experience</h1>
+        <p>Discover premium gaming peripherals engineered for speed, precision, and ultimate performance.</p>
+        <div class="cta-buttons">
+            <a href="#shop-now" class="cta-btn cta-shop-now">Shop Now</a>
+            <a href="#explore" class="cta-btn cta-explore">Explore More</a>
+        </div>
+    </div>
+    <div class="background-video">
+        <video autoplay loop muted>
+            <source src="videos/about us/arcade vj loop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="background-overlay"></div>
+</section>
+
+
+
+
+
+
+
+
+<section class="peripherals-grid">
+    <!-- Header Part -->
+    <div class="peripherals-header">
+        <h2>Gaming Peripherals Collection</h2>
+        <p>Explore our curated selection of top-tier gaming peripherals, from keyboards to headsets, designed to elevate your gaming experience.</p>
+    </div>
+
+    <!-- Peripheral Items -->
+    <div class="peripheral-item">
+        <img src="peripharals/keyboard/Razer Huntsman Elite Keyboard.jpg" alt="Razer Huntsman Elite Keyboard">
+        <div class="overlay-content">
+            <div class="price-container">
+                <p class="price">Razer Huntsman Elite - $99.99</p>
+            </div>
+            <p class="description">A high-performance keyboard with linear optical switches and customizable RGB lighting.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+    <div class="peripheral-item">
+        <img src="peripharals/mice/Logitech G502 HERO Mouse.jpg" alt="Logitech G502 HERO Mouse">
+        <div class="overlay-content">
+            <div class="price-container">
+                <p class="price">Logitech G502 HERO - $49.99</p>
+            </div>
+            <p class="description">An ergonomic gaming mouse with a high-precision sensor and customizable buttons.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+    <div class="peripheral-item">
+        <img src="peripharals/headset/SteelSeries Arctis 7 Headset.jpg" alt="SteelSeries Arctis 7 Headset">
+        <div class="overlay-content">
+            <div class="price-container">
+                <p class="price">SteelSeries Arctis 7 - $79.99</p>
+            </div>
+            <p class="description">A wireless headset with a clear microphone, perfect for long gaming sessions.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+    <div class="peripheral-item">
+        <img src="peripharals/ASUS ROG Swift PG279Q Monitor.jpg" alt="ASUS ROG Swift PG279Q Monitor">
+        <div class="overlay-content">
+            <div class="price-container">
+                <p class="price">ASUS ROG Swift PG279Q - $299.99</p>
+            </div>
+            <p class="description">A high-performance gaming monitor with a 165Hz refresh rate and G-SYNC support.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+    <div class="peripheral-item">
+        <img src="peripharals/Xbox Elite Series 2 Controller.webp" alt="Xbox Elite Series 2 Controller">
+        <div class="overlay-content">
+            <div class="price-container">
+                <p class="price">Xbox Elite Series 2 - $59.99</p>
+            </div>
+            <p class="description">A customizable controller with adjustable tension thumbsticks and trigger stops.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+    <div class="peripheral-item">
+        <img src="peripharals/Secretlab Titan Gaming Chair.webp" alt="Secretlab Titan Gaming Chair">
+        <div class="overlay-content">
+            <div class="price-container">
+                <p class="price">Secretlab Titan - $199.99</p>
+            </div>
+            <p class="description">An ergonomic gaming chair designed for maximum comfort and support during long gaming sessions.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+    <div class="peripheral-item">
+        <img src="peripharals/NZXT H510 Elite PC Case.jpg" alt="NZXT H510 Elite PC Case">
+        <div class="overlay-content">
+            <div class="price-container">
+                <p class="price">NZXT H510 Elite - $119.99</p>
+            </div>
+            <p class="description">A sleek, mid-tower PC case with a tempered glass front and side panel for showcasing your build.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+    <div class="peripheral-item">
+        <img src="peripharals/HyperX QuadCast Microphone.webp" alt="HyperX QuadCast Microphone">
+        <div class="overlay-content">
+            <div class="price-container">
+                <p class="price">HyperX QuadCast - $89.99</p>
+            </div>
+            <p class="description">A premium USB microphone with noise cancellation and four polar patterns for crystal clear sound.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Gear Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Gaming Gear Shop</h1>
+        <nav class="category-tabs">
+            <a href="#keyboards">Keyboards</a>
+            <a href="#mice">Mice</a>
+            <a href="#headphones">Headphones</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="categories">
+            <!-- Keyboards Section -->
+            <section id="keyboards" class="category-section">
+                <h2>Gaming Keyboards</h2>
+                <div class="grid">
+                    <!-- Keyboard Item 1 -->
+                    <div class="grid-item">
+                        <img src="peripharals/Razer BlackWidow V3.jpg" alt="Mechanical Keyboard">
+                        <div class="price-overlay">Price: $129</div>
+                        <div class="product-label">New</div>
+                        <input type="checkbox" id="product1" class="product-toggle">
+                        <label for="product1" class="product-label">Details</label>
+                        <div class="product-detail">
+                            <label for="product1" class="close">×</label>
+                            <div class="product-info">
+                                <img src="peripharals/Razer BlackWidow V3.jpg" alt="Mechanical Keyboard">
+                                <h3>Razer BlackWidow V3</h3>
+                                <p>Price: $129</p>
+                                <p>The Razer BlackWidow V3 is a mechanical gaming keyboard with customizable RGB lighting and Razer Green switches, designed for gaming enthusiasts.</p>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Keyboard Item 2 -->
+                    <div class="grid-item">
+                        <img src="peripharals/keyboard/Logitech G Pro X.jpg" alt="RGB Keyboard">
+                        <div class="price-overlay">Price: $99</div>
+                        <div class="product-label">Best Seller</div>
+                        <input type="checkbox" id="product2" class="product-toggle">
+                        <label for="product2" class="product-label">Details</label>
+                        <div class="product-detail">
+                            <label for="product2" class="close">×</label>
+                            <div class="product-info">
+                                <img src="peripharals/keyboard/Logitech G Pro X.jpg" alt="RGB Keyboard">
+                                <h3>Logitech G Pro X</h3>
+                                <p>Price: $99</p>
+                                <p>Designed for competitive gamers, the Logitech G Pro X features swappable switches and RGB lighting, offering both performance and style.</p>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Keyboard Item 3 -->
+                    <div class="grid-item">
+                        <img src="peripharals/keyboard/Corsair K70 RGB MK.2.webp" alt="Silent Keyboard">
+                        <div class="price-overlay">Price: $149</div>
+                        <div class="product-label">Limited Edition</div>
+                        <input type="checkbox" id="product3" class="product-toggle">
+                        <label for="product3" class="product-label">Details</label>
+                        <div class="product-detail">
+                            <label for="product3" class="close">×</label>
+                            <div class="product-info">
+                                <img src="peripharals/keyboard/Corsair K70 RGB MK.2.webp" alt="Silent Keyboard">
+                                <h3>Corsair K70 RGB MK.2</h3>
+                                <p>Price: $149</p>
+                                <p>The Corsair K70 RGB MK.2 is a premium mechanical keyboard with Cherry MX Silent switches, offering a quiet typing experience along with full RGB lighting.</p>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mice Section -->
+            <section id="mice" class="category-section">
+                <h2>Gaming Mice</h2>
+                <div class="grid">
+                    <!-- Mouse Item 1 -->
+                    <div class="grid-item">
+                        <img src="peripharals/mice/Logitech G Pro Wireless.webp" alt="Wireless Gaming Mouse">
+                        <div class="price-overlay">Price: $69</div>
+                        <div class="product-label">Hot Deal</div>
+                        <input type="checkbox" id="product4" class="product-toggle">
+                        <label for="product4" class="product-label">Details</label>
+                        <div class="product-detail">
+                            <label for="product4" class="close">×</label>
+                            <div class="product-info">
+                                <img src="peripharals/mice/Logitech G Pro Wireless.webp" alt="Wireless Gaming Mouse">
+                                <h3>Logitech G Pro Wireless</h3>
+                                <p>Price: $69</p>
+                                <p>Lightweight and wireless, the Logitech G Pro Wireless mouse offers top-tier performance with HERO sensor technology, designed for esports players.</p>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mouse Item 2 -->
+                    <div class="grid-item">
+                        <img src="peripharals/mice/Razer DeathAdder V2.jpg" alt="Ergonomic Gaming Mouse">
+                        <div class="price-overlay">Price: $79</div>
+                        <div class="product-label">Top Rated</div>
+                        <input type="checkbox" id="product5" class="product-toggle">
+                        <label for="product5" class="product-label">Details</label>
+                        <div class="product-detail">
+                            <label for="product5" class="close">×</label>
+                            <div class="product-info">
+                                <img src="peripharals/mice/Razer DeathAdder V2.jpg" alt="Ergonomic Gaming Mouse">
+                                <h3>Razer DeathAdder V2</h3>
+                                <p>Price: $79</p>
+                                <p>Featuring ergonomic design, Razer's DeathAdder V2 mouse offers 20,000 DPI precision and speed, built for maximum comfort and control.</p>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mouse Item 3 -->
+                    <div class="grid-item">
+                        <img src="peripharals/mice/SteelSeries Rival 600.jpg" alt="High Precision Gaming Mouse">
+                        <div class="price-overlay">Price: $59</div>
+                        <div class="product-label">Best Seller</div>
+                        <input type="checkbox" id="product6" class="product-toggle">
+                        <label for="product6" class="product-label">Details</label>
+                        <div class="product-detail">
+                            <label for="product6" class="close">×</label>
+                            <div class="product-info">
+                                <img src="peripharals/mice/SteelSeries Rival 600.jpg" alt="High Precision Gaming Mouse">
+                                <h3>SteelSeries Rival 600</h3>
+                                <p>Price: $59</p>
+                                <p>The SteelSeries Rival 600 is a high-precision gaming mouse with dual sensors, offering incredible accuracy and performance for competitive play.</p>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Headphones Section -->
+            <section id="headphones" class="category-section">
+                <h2>Gaming Headphones</h2>
+                <div class="grid">
+                    <!-- Headset Item 1 -->
+                    <div class="grid-item">
+                        <img src="peripharals/Headphone/SteelSeries Arctis Pro.jpg" alt="Noise Cancelling Headset">
+                        <div class="price-overlay">Price: $199</div>
+                        <div class="product-label">New</div>
+                        <input type="checkbox" id="product7" class="product-toggle">
+                        <label for="product7" class="product-label">Details</label>
+                        <div class="product-detail">
+                            <label for="product7" class="close">×</label>
+                            <div class="product-info">
+                                <img src="peripharals/Headphone/SteelSeries Arctis Pro.jpg" alt="Noise Cancelling Headset">
+                                <h3>SteelSeries Arctis Pro</h3>
+                                <p>Price: $199</p>
+                                <p>The SteelSeries Arctis Pro offers premium sound quality with DTS Headphone:X v2.0 surround sound, perfect for immersive gaming and long hours of comfort.</p>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Headset Item 2 -->
+                    <div class="grid-item">
+                        <img src="peripharals/Headphone/Razer Kraken Ultimate.jpg" alt="Gaming Headset with Microphone">
+                        <div class="price-overlay">Price: $129</div>
+                        <div class="product-label">Best Seller</div>
+                        <input type="checkbox" id="product8" class="product-toggle">
+                        <label for="product8" class="product-label">Details</label>
+                        <div class="product-detail">
+                            <label for="product8" class="close">×</label>
+                            <div class="product-info">
+                                <img src="peripharals/Headphone/Razer Kraken Ultimate.jpg" alt="Gaming Headset with Microphone">
+                                <h3>Razer Kraken Ultimate</h3>
+                                <p>Price: $129</p>
+                                <p>The Razer Kraken Ultimate provides excellent audio clarity, active noise-canceling technology, and a retractable mic for all your gaming needs.</p>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Headset Item 3 -->
+                    <div class="grid-item">
+                        <img src="peripharals/Headphone/Logitech G Pro X Wireless.jpg" alt="Wireless Gaming Headset">
+                        <div class="price-overlay">Price: $149</div>
+                        <div class="product-label">Top Rated</div>
+                        <input type="checkbox" id="product9" class="product-toggle">
+                        <label for="product9" class="product-label">Details</label>
+                        <div class="product-detail">
+                            <label for="product9" class="close">×</label>
+                            <div class="product-info">
+                                <img src="peripharals/Headphone/Logitech G Pro X Wireless.jpg" alt="Wireless Gaming Headset">
+                                <h3>Logitech G Pro X Wireless</h3>
+                                <p>Price: $149</p>
+                                <p>Designed for professional esports players, the Logitech G Pro X Wireless headphones offer crystal-clear audio and a detachable microphone for competitive play.</p>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Footer Section -->
+     <footer class="advanced-footer">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="./index.html"> <!-- Link to homepage -->
+                    <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+                </a>
+                <h1><span class="titan">TITAN</span> GAMING</h1>
+                <p>Where gamers unite and conquer!</p>
+            </div>
+    
+            <!-- Navigation Links -->
+            <div class="footer-navigation">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="faq.html">Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Stay Connected</h3>
+                <ul>
+                    <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+                </ul>
+            </div>
+        
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Middle Section -->
+        <div class="footer-middle">
+            <div class="features">
+                <h3>Why Titan Gaming?</h3>
+                <ul>
+                    <li>Exclusive Game Releases</li>
+                    <li>Top Leaderboards</li>
+                    <li>Weekly Gaming Events</li>
+                    <li>24/7 Support for Gamers</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+            <ul class="legal-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
