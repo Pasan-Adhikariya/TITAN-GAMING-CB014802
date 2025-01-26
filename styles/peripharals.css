@@ -1,0 +1,616 @@
+/* Main Title Section Styling */
+.main-title {
+    position: relative;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Title and Text Animation */
+.title-container {
+    position: relative;
+    z-index: 2;
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+/* Main Heading Style */
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    animation: fadeUp 1.5s ease-in-out forwards;
+}
+
+/* Subtitle Style */
+p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    animation: fadeUp 2s ease-in-out forwards;
+}
+
+/* Call to Action Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: white;
+    background: linear-gradient(135deg, #ff6347, #00bfff);
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-shop-now {
+    background: linear-gradient(135deg, #00bfff, #00aaff);
+}
+
+.cta-explore {
+    background: linear-gradient(135deg, #ff6347, #ff4d3d);
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn:focus {
+    outline: none;
+}
+
+/* Background Video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Background Overlay for Improved Visibility */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+/* Keyframe Animations */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header Part Styling */
+.peripherals-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.peripherals-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.peripherals-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling for the grid section */
+.peripherals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Peripherals item styling */
+.peripheral-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.peripheral-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.peripheral-item:hover .overlay-content {
+    opacity: 1;
+}
+
+.price-container {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.buy-now {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #0077cc;
+}
+
+
+/* Grid container for peripherals */
+.peripherals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style for individual peripheral items */
+.peripheral-item {
+    position: relative;
+    overflow: hidden; /* Hide overflow when elements are positioned outside */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure images fit properly within the box */
+.peripheral-item img {
+    width: 100%; /* Ensure the image fills the entire container width */
+    height: 100%; /* Ensure the image fills the container's height */
+    object-fit: cover; /* This will make sure the image covers the space without distorting */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the item */
+.peripheral-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay content for price, description, and buy button */
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show overlay content when hovering over the peripheral */
+.peripheral-item:hover .overlay-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Price container */
+.price-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Description text */
+.description {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+    flex-grow: 1;
+}
+
+/* Buy Now Button */
+.buy-now {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.buy-now:hover {
+    background-color: #005f73;
+}
+
+/* Ensure all items in the grid are aligned */
+.peripheral-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive design tweaks */
+@media (max-width: 768px) {
+    .peripherals-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .buy-now {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: #fff;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #00b0ff;
+    margin: 0;
+}
+
+nav.category-tabs {
+    margin-top: 10px;
+}
+
+nav.category-tabs a {
+    color: #00b0ff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav.category-tabs a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    padding: 40px 20px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.category-section {
+    background-color: #292929;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.category-section h2 {
+    font-size: 2em;
+    color: #00b0ff;
+    margin-bottom: 20px;
+}
+
+/* Product Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    position: relative;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item:hover img {
+    opacity: 0.9;
+}
+
+/* Price Overlay */
+.price-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Product Label */
+.product-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #00b0ff;
+    border-radius: 5px;
+}
+
+/* Popup Details */
+.product-toggle {
+    display: none;
+}
+
+.product-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 20px;
+}
+
+.product-info {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.product-info img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-info h3 {
+    font-size: 1.8em;
+    color: #00b0ff;
+    margin-top: 15px;
+}
+
+.product-info p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.product-info .buy-now {
+    background-color: #00b0ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.product-info .buy-now:hover {
+    background-color: #007bb5;
+}
+
+.product-detail .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Show Popup when Checked */
+.product-toggle:checked ~ .product-detail {
+    display: flex;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .category-section h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .category-tabs a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+}

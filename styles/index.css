@@ -1,0 +1,598 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    line-height: 1.6;
+    padding-top: 60px; /* Added space for sticky header */
+}
+
+/* Header Section Fix */
+.gaming-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(135deg, #000000 25%, #4c4d48 50%, #000000 75%);
+    position: relative;
+    top: 0;
+    z-index: 100;
+    animation: silverFloatRightToLeft 7s linear infinite;
+    background-size: 350% 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    color: #fff;
+    transition: top 0.3s ease; /* Smooth transition for sticky header */
+    opacity: 1; /* Ensure the header is not transparent */
+}
+
+/* Define the continuous right-to-left floating silver gradient animation */
+@keyframes silverFloatRightToLeft {
+    0% {
+        background-position: 150% 0%;
+    }
+    50% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: -50% 0%;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+}
+
+.logo-img {
+    width: 100px;
+    margin-right: 5px; /* Reduced margin between logo image and text */
+}
+
+.logo h1 {
+    font-size: 24px;
+    background: linear-gradient(90deg, cyan, rgb(55, 177, 177));
+    background-clip: text;
+    color: transparent;
+}
+
+.logo h1 span {
+    text-shadow: 0 0 5px #e1e5e6, 0 0 7px #888;
+}
+
+.logo h1 span.titan {
+    color: #e1e5e6;
+    animation: white-flash 3s ease-in-out infinite;
+}
+
+@keyframes white-flash {
+    0% {
+        text-shadow: 0 0 5px #e0e6e7, 0 0 7px #888;
+    }
+    50% {
+        text-shadow: 0 0 25px white, 0 0 15px #888, 0 0 30px rgb(0, 0, 0);
+    }
+    100% {
+        text-shadow: 0 0 5px #e6eaeb, 0 0 7px #888;
+    }
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+    text-shadow: 0 0 10px #00bcd4;
+}
+
+/* Dropdown Menu */
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.navbar .dropdown-menu li {
+    padding: 8px 15px;
+}
+
+.navbar .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .dropdown-menu a:hover {
+    color: #00bcd4;
+    text-shadow: 0 0 10px #00bcd4;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+/* Search Bar */
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.search-btn {
+    padding: 8px 12px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #ff4081;
+}
+
+/* User Account */
+.user-account {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.user-account a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.user-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    list-style: none;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.user-account:hover .user-menu {
+    display: block;
+    opacity: 1;
+}
+
+.user-menu li {
+    padding: 10px 15px;
+}
+
+.user-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.language-selector a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.language-selector .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    list-style: none;
+    background-color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.language-selector:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.language-selector .dropdown-menu li {
+    padding: 10px 15px;
+}
+
+.language-selector .dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Cart Icon */
+.cart a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .gaming-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        font-size: 14px; /* Reduced font size for smaller header */
+        opacity: 1; /* Ensure header is not transparent on mobile */
+        background: #000000; /* Solid background color for mobile */
+        animation: none; /* Remove animation on mobile */
+    }
+
+    /* Hide cart icon on mobile */
+    .cart {
+        display: none;
+    }
+
+    /* Remove login and language selector */
+    .user-account, .language-selector {
+        display: none;
+    }
+
+    /* Logo Section */
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Place the search box under the logo */
+    .search-box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    /* Search Input styling for mobile */
+    .search-input {
+        width: 80%;
+        padding: 8px;
+        font-size: 16px;
+        border: none;
+        background-color: #444;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+    .search-btn {
+        padding: 8px 12px;
+        background-color: #00bcd4;
+        color: #fff;
+        border: none;
+        margin-left: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .search-btn:hover {
+        background-color: #ff4081;
+    }
+
+    /* Navigation Menu */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Hamburger Menu */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 120;
+    }
+
+    .hamburger-menu span {
+        background-color: #fff;
+        height: 4px;
+        width: 100%;
+    }
+
+    /* Position the hamburger menu to the right side of the logo */
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Show the navbar when active */
+    .navbar.active {
+        display: flex;
+    }
+}
+
+/*end of the heder part*
+
+
+
+
+
+
+
+/* FOOTER PART */
+/* General Reset */
+body, h1, h3, p, ul, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer Styles */
+.advanced-footer {
+    background: linear-gradient(180deg, #1a1a1a, #000);
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer Top Section - Grid Layout for Desktop */
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+    gap: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Brand Section */
+.footer-brand {
+    text-align: center;
+}
+
+.footer-logo {
+    width: 80px; /* Example size for your logo image */
+}
+
+.footer-brand h1 {
+    font-size: 24px;
+    background: linear-gradient(90deg, cyan, rgb(55, 177, 177)); /* Gradient from cyan to teal */
+    background-clip: text;
+    color: transparent; /* Makes the text show the gradient */
+}
+
+.footer-brand h1 span {
+    text-shadow: 0 0 5px #e1e5e6, 0 0 7px #888; /* Dim glow effect with cyan and gray */
+}
+
+/* White flash effect only for the "TITAN" part inside footer logo h1 span */
+.footer-brand h1 span.titan {
+    color: #e1e5e6; /* Light gray color for the "TITAN" text */
+    animation: white-flash 3s ease-in-out infinite; /* Apply the white flash animation */
+}
+
+/* White flash effect using keyframes */
+@keyframes white-flash {
+    0% {
+        text-shadow: 0 0 5px #e0e6e7, 0 0 7px #888;
+    }
+    50% {
+        text-shadow: 0 0 25px white, 0 0 15px #888, 0 0 30px rgb(0, 0, 0);
+    }
+    100% {
+        text-shadow: 0 0 5px #e6eaeb, 0 0 7px #888;
+    }
+}
+
+/* Footer Navigation, Social, and Newsletter Sections */
+.footer-navigation, .footer-social, .footer-newsletter {
+    text-align: center;
+}
+
+.footer-navigation h3, .footer-social h3, .footer-newsletter h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f4d03f;
+}
+
+.footer-navigation ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-navigation li, .footer-social li {
+    margin: 5px 0;
+}
+
+.footer-navigation a, .footer-social a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-navigation a:hover, .footer-social a:hover {
+    color: cyan;
+}
+
+/* Newsletter Section */
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column; /* Stacked fields */
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-newsletter input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #333;
+    color: #fff;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: cyan;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background: #f4d03f;
+    color: #fff;
+}
+
+/* Middle Section */
+.footer-middle {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-middle h3 {
+    font-size: 1.2rem;
+    color: #f4d03f;
+    margin-bottom: 10px;
+}
+
+.footer-middle ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.footer-middle li {
+    color: #bbb;
+}
+
+.footer-middle li::before {
+    content: "•";
+    color: cyan;
+    margin-right: 5px;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.footer-bottom a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: cyan;
+}
+
+/* Responsive Design - Stack sections for mobile */
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr; /* Stack sections vertically for mobile */
+        gap: 20px;
+    }
+
+    .footer-middle ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-bottom ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
